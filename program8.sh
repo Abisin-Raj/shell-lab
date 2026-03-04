@@ -15,17 +15,12 @@ do
 
     sum=$(( sum + sd * sd * sd ))
 
-    # Example: 153 / 10 = 15 (integer division truncates the decimal part)
     n=$(( n / 10 ))
 done
 
-# Compare the original number ('old') with the calculated sum ('sum')
-# -eq is the equality operator for numeric comparison
 if [ $old -eq $sum ]; then
-    # If they are equal, the number is an Armstrong number
     echo "Number is Armstrong"
 else
-    # If they are not equal, it is not an Armstrong number
     echo "Number is not Armstrong"
 fi
 
