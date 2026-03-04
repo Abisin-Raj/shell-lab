@@ -21,11 +21,6 @@ echo "Number of lines = $lines"
 echo "Number of words = $words"
 echo "Number of characters = $characters"
 
-# | Contents of the file are               |
-# | ##############                         |
-# | Displaying content of: abc.txt         |
-# | hello world                            |
-# | #############                          |
 # | Number of lines = 1                    |
 # | Number of words = 2                    |
 # | Number of characters = 12              |
