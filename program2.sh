@@ -50,11 +50,6 @@ fi
 
 done
 
-# | 3. Multiplication                      |
-# | 4. Division                            |
-# | Enter your choice                      |
-# | 1                                      |
-# | Enter first number:                    |
 # | 2                                      |
 # | Enter second number:                   |
 # | 3                                      |
