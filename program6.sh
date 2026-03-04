@@ -20,19 +20,13 @@ do
 
     while [ $j -lt $i ]
     do
-        # % is modulo operator
         k=$((i % j))
 
-        # Check if remainder is 0 (meaning i is divisible by j)
-        # -eq is "equal to"
         if [ $k -eq 0 ]; then
-            # If divisible, it's not a prime number
             flag=1
-            # Break out of inner loop - no need to check further
             break
         fi
 
-        # Increment inner loop counter
         j=$((j + 1))
     done
 
