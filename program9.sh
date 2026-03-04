@@ -5,12 +5,6 @@ echo "Enter the string:"
 
 read string
 
-# Reverse the string
-# echo $string pipes the variable content to the 'rev' command
-# 'rev' is a utility that reverses lines of a file or string
-# The result is stored in variable 'stringrev'
-# Example: if string="madam", stringrev="madam"
-#          if string="hello", stringrev="olleh"
 stringrev=$(echo $string | rev)
 
 # Compare the original string with the reversed string
