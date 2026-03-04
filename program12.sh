@@ -1,13 +1,8 @@
-# Heading: Program to calculate Gross Salary
-# Aim: To calculate the gross salary of an employee
 
-# Clear the terminal screen to start with a blank slate
 clear
 
-# Prompt the user to enter the employee's name
 echo "Enter the name of the employee"
 
-# Read the employee's name into variable 'name'
 read name
 
 # Prompt the user for Basic Pay (BP)
