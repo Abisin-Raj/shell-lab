@@ -1,13 +1,8 @@
-# Heading: Program to check Palindrome
-# Aim: To check if a given string is a palindrome
 
-# Clear the terminal screen for clean output
 clear
 
-# Prompt the user to enter a string to check
 echo "Enter the string:"
 
-# Read the user's input into variable 'string'
 read string
 
 # Reverse the string

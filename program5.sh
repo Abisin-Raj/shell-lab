@@ -22,4 +22,3 @@ done
 
 echo "Reverse of the number is $rev"
 
-# |________________________________________|
