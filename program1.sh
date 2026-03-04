@@ -1,16 +1,10 @@
 
 clear
 
-# Syntax: echo "string"
-# The text in quotes is displayed exactly as written
 echo "Enter the radius of the circle:"
 
-# read - Built-in command that reads user input from stdin
-# Syntax: read variable_name
-# Waits for user to type input and press Enter, then stores it in variable 'r'
 read r
 
-# Command substitution with $(...) and pipe to bc calculator
 # Syntax: variable=$(command)
 # - $(...) executes the command inside and captures its output
 # - echo "expression" prints the mathematical expression as a string
