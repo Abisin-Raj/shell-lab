@@ -1,14 +1,8 @@
 
 echo "Factorial of the number?"
 
-# Syntax: read variable_name
-# Waits for user to type a number and press Enter, then stores it in variable 'fact'
-# 'fact' represents the number n for which we want to find n!
 read fact
 
-# Initialize 'ans' (answer) to 1
-# Syntax: variable=value (no spaces around =)
-# We start with 1 because 1 is the multiplicative identity: n! = 1 * 2 * 3 * ... * n
 ans=1
 
 # Initialize 'counter' to 0
