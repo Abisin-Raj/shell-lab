@@ -5,15 +5,10 @@ read a b c
 
 sum=$(echo "$a+$b+$c" | bc)
 
-# bc performs floating-point division (unlike shell arithmetic)
 mean=$(echo "scale=4; $sum/3" | bc)
 
-# Display the calculated mean
 echo "Mean of $a, $b, $c is $mean"
 
-# Standard Deviation Calculation - Step 1
-# Formula: SD = sqrt(Σ(x - mean)²/n)
-# First, calculate (a-mean)² - the squared deviation of first number
 # ($a-$mean)*($a-$mean) computes the square of the difference
 # bc handles the decimal arithmetic since mean has decimal places
 sd=$(echo "($a-$mean)*($a-$mean)" | bc)
