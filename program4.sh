@@ -1,10 +1,6 @@
-# Heading: Program to calculate Mean and Variance
-# Aim: To calculate Mean and Variance of 3 numbers
 
-# Prompt user for input
 echo "Enter the three numbers separated by space:"
 
-# Read three space-separated numbers into variables a, b, c
 read a b c
 
 # Calculate sum using bc (basic calculator)
