@@ -22,16 +22,10 @@ do
 
 i=$((i + 1))
 
-# Example: if x=0, y=1, then z=1
-#          if x=1, y=1, then z=2
-#          if x=1, y=2, then z=3, etc.
 z=$((x + y))
 
-# Print the newly calculated Fibonacci term
 echo "$z"
 
-# Shift values for next iteration
-# Move y (previous term) to x (previous-previous term)
 # This prepares x for the next calculation
 x=$y
 
