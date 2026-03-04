@@ -50,10 +50,5 @@ fi
 
 done
 
-# | 2                                      |
-# | Enter second number:                   |
-# | 3                                      |
-# | Sum = 5                                |
-# | Do you want to continue (y/n)?         |
 # | n                                      |
 # |________________________________________|
