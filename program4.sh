@@ -9,13 +9,8 @@ mean=$(echo "scale=4; $sum/3" | bc)
 
 echo "Mean of $a, $b, $c is $mean"
 
-# ($a-$mean)*($a-$mean) computes the square of the difference
-# bc handles the decimal arithmetic since mean has decimal places
 sd=$(echo "($a-$mean)*($a-$mean)" | bc)
 
-# Standard Deviation Calculation - Step 2
-# Add (b-mean)² to the running sum
-# $sd contains the previous squared deviation
 # $sd+($b-$mean)*($b-$mean) adds the second squared deviation
 # This accumulates: (a-mean)² + (b-mean)²
 sd=$(echo "$sd+($b-$mean)*($b-$mean)" | bc)
