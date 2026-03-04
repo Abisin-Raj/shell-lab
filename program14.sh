@@ -1,12 +1,6 @@
-# Heading: Program to Display Greeting
-# Aim: To display a greeting message based on system time
 
-# Clear the terminal screen for a fresh display
 clear
 
-# Get the current time in HH:MM:SS format
-# 'date' - command that prints system date/time information
-# Syntax: date +"FORMAT"
 # +"%T" is a format specifier where %T = HH:MM:SS (equivalent to %H:%M:%S)
 # Command substitution with $(...) captures the output of 'date' into 'now'
 # This is used only for display purposes (12-hour or 24-hour time for the user)
