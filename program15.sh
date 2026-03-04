@@ -16,6 +16,3 @@ echo "${#vowels} vowels"
 
 echo "${#consonants} consonants"
 
-# | 2 vowels                               |
-# | 3 consonants                           |
-# |________________________________________|
