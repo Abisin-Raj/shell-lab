@@ -5,14 +5,8 @@ now=$(date +"%T")
 
 echo "Current time: $now"
 
-# We overwrite 'now' with just the hour because we need an integer for comparison
-# This separate call is needed because %T cannot be compared directly with -ge/-lt
 now=$(date +"%H")
 
-# Check time ranges to determine the appropriate greeting
-# Syntax: if [ condition ]; then ... elif [ condition ]; then ... else ... fi
-# Numeric comparison operators used:
-#   -ge : greater than or equal to (>=)
 #   -le : less than or equal to    (<=)
 #   -gt : greater than             (>)
 #   -a  : logical AND - both conditions must be true
