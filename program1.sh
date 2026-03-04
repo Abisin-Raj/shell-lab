@@ -5,12 +5,6 @@ echo "Enter the radius of the circle:"
 
 read r
 
-# Syntax: variable=$(command)
-# - $(...) executes the command inside and captures its output
-# - echo "expression" prints the mathematical expression as a string
-# - | (pipe) sends the output of echo to the next command
-# - bc is a command-line calculator that evaluates the expression
-# - $r is variable expansion - replaced with the value stored in variable r
 # Formula: Area = π * r² (using 3.14 as approximation of π)
 area=$(echo "3.14 * $r * $r" | bc)
 
