@@ -1,12 +1,6 @@
-# Heading: Program to calculate Area and Circumference of a Circle
-# Aim: To calculate Area and Circumference of a Circle given radius
 
-# clear - Built-in command that clears the terminal screen
-# Syntax: clear
-# This provides a clean display before the program output
 clear
 
-# echo - Built-in command that prints text to standard output (terminal)
 # Syntax: echo "string"
 # The text in quotes is displayed exactly as written
 echo "Enter the radius of the circle:"
