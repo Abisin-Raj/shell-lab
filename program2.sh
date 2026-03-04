@@ -1,5 +1,3 @@
-# Heading: Program to perform Arithmetic Operations
-# Aim: To perform Arithmetic Operations using case statement
 
 # Variable initialization
 # Syntax: variable=value (no spaces around =)
