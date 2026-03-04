@@ -11,13 +11,8 @@ echo "Mean of $a, $b, $c is $mean"
 
 sd=$(echo "($a-$mean)*($a-$mean)" | bc)
 
-# $sd+($b-$mean)*($b-$mean) adds the second squared deviation
-# This accumulates: (a-mean)² + (b-mean)²
 sd=$(echo "$sd+($b-$mean)*($b-$mean)" | bc)
 
-# Standard Deviation Calculation - Step 3
-# Add (c-mean)² to complete the sum of squared deviations
-# Now sd contains: (a-mean)² + (b-mean)² + (c-mean)²
 # This is Σ(x - mean)² for all three numbers
 sd=$(echo "$sd+($c-$mean)*($c-$mean)" | bc)
 
