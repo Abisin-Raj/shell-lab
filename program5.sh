@@ -20,12 +20,6 @@ n=$((n / 10))
 
 done
 
-# $rev contains the final reversed value
 echo "Reverse of the number is $rev"
 
-# Output:
-# __________________________________________
-# | Enter a number:                        |
-# | 12345                                  |
-# | Reverse of the number is 54321         |
 # |________________________________________|
