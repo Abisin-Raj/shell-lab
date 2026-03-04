@@ -7,17 +7,11 @@ ans=1
 
 counter=0
 
-# Loop runs from counter=1 to counter=fact, multiplying ans each iteration
-# Example for n=5: ans = 1*1*2*3*4*5 = 120 (which is 5!)
 while [ $fact -ne $counter ]
 do
 
-    # Increment counter by 1 each iteration (counts from 1 up to fact)
-    # Syntax: $((expression)) - arithmetic expansion
-    # This means counter = counter + 1
     counter=$(( counter + 1 ))
 
-    # Multiply 'ans' by 'counter' using bc (basic calculator)
     # Syntax: variable=$(echo "expression" | bc)
     # - echo "$ans * $counter" prints the expression as a string
     # - | (pipe) sends it to bc which evaluates it
