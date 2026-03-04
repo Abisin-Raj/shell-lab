@@ -6,16 +6,11 @@ read -p "Enter the filename: " file
 echo "Contents of the file are"
 echo "##############"
 
-# 'cat' command concatenates and displays the file content
 echo "Displaying content of: $file"
 cat $file
 
 echo "#############"
 
-# Count lines in the file
-# wc -l counts the number of lines
-# < $file redirects the file content into stdin of wc
-# This robust method ensures wc outputs ONLY the number (no filename)
 lines=$(wc -l < $file)
 
 # Count words in the file
