@@ -1,7 +1,4 @@
-# Heading: Program to Count Vowels and Consonants
-# Aim: To count vowels and consonants in a string
 
-# Clear the terminal screen for a clean output
 clear
 
 # Prompt the user to enter a text string
