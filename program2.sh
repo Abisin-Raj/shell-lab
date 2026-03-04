@@ -1,12 +1,6 @@
 
-# Variable initialization
-# Syntax: variable=value (no spaces around =)
-# Initialize sum to 0 - will store calculation results
 sum=0
 
-# Initialize loop control variable
-# Syntax: variable="string"
-# i is set to "y" to enter the while loop initially
 i="y"
 
 # while loop - repeats as long as condition is true
