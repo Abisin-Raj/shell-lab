@@ -15,15 +15,10 @@ sd=$(echo "$sd+($b-$mean)*($b-$mean)" | bc)
 
 sd=$(echo "$sd+($c-$mean)*($c-$mean)" | bc)
 
-# Note: This calculates variance, not standard deviation
-# (Standard deviation would require sqrt, but bc doesn't have it built-in)
 sd=$(echo "scale=6; $sd/3" | bc)
 
-# Display the result (technically this is variance, not SD)
 echo "Variance is $sd"
 
-# Output:
-# __________________________________________
 # | Enter the three numbers separated by space:|
 # | 1 2 3                                      |
 # | Mean of 1, 2, 3 is 2.0000                  |
