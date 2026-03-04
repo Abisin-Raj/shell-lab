@@ -30,19 +30,13 @@ do
         j=$((j + 1))
     done
 
-    # After inner loop, check the flag
-    # If flag remains 0, no divisors were found -> it is Prime
     if [ $flag -eq 0 ]; then
-        # Print the prime number
-        # -n option suppresses the trailing newline so numbers print on one line
         echo -n " $i"
     fi
 
-    # Increment outer loop counter to check next number
     i=$((i + 1))
 done
 
-# Print a final newline for clean formatting
 echo
 
 # Output:
