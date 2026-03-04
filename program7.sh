@@ -30,12 +30,6 @@ x=$y
 
 y=$z
 
-#   Initial: x=0, y=1 (printed)
-#   Iter 1: z=0+1=1, x=1, y=1
-#   Iter 2: z=1+1=2, x=1, y=2
-#   Iter 3: z=1+2=3, x=2, y=3
-#   Iter 4: z=2+3=5, x=3, y=5
-#   Iter 5: z=3+5=8, x=5, y=8
 #   Series: 0, 1, 1, 2, 3, 5, 8
 done
 
