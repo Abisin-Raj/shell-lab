@@ -11,15 +11,10 @@ old=$n
 
 while [ $n -gt 0 ]
 do
-    # Example: if n=153, 153 % 10 = 3
     sd=$((n % 10 ))
 
-    # Calculate the cube of the digit and add it to the 'sum'
-    # Logic: sum = sum + (digit * digit * digit)
-    # This specific implementation checks for Armstrong numbers of order 3 (sum of cubes)
     sum=$(( sum + sd * sd * sd ))
 
-    # Remove the last digit from the number using integer division
     # Example: 153 / 10 = 15 (integer division truncates the decimal part)
     n=$(( n / 10 ))
 done
