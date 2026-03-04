@@ -44,15 +44,10 @@ esac
 echo "Do you want to continue (y/n)?"
 read i
 
-# != is the not-equal operator
 if [ $i != "y" ]; then
-    # exit - terminates the script immediately
-    # Syntax: exit [exit_code]
     exit
 fi
 
-# done - marks the end of the while loop
-# If exit wasn't called, loop continues (goes back to while condition)
 done
 
 # Output:
