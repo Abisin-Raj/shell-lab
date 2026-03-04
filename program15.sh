@@ -1,15 +1,10 @@
 
 clear
 
-# Prompt the user to enter a text string
 echo "Enter the string "
 
-# Read the user's input into variable 'word'
 read word
 
-# Extract all vowels from the string
-# echo $word pipes the string to sed (stream editor)
-# sed 's/[^aeiouAEIOU]//g':
 #   s/ -> substitute command
 #   [^aeiouAEIOU] -> Match any character that is NOT a vowel (caret ^ inside [] means negation)
 #   // -> Replace matched characters with nothing (delete them)
