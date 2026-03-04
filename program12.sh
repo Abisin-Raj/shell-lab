@@ -5,22 +5,16 @@ echo "Enter the name of the employee"
 
 read name
 
-# Prompt the user for Basic Pay (BP)
 echo "Enter the Basic Pay of the employee"
 
-# Read Basic Pay into variable 'BP'
 read BP
 
-# Prompt the user for Dearness Allowance (DA) percentage
 echo "Enter the DA of the employee"
 
-# Read DA percentage into variable 'DA'
 read DA
 
-# Prompt the user for House Rent Allowance (HRA) percentage
 echo "Enter the HRA of the employee"
 
-# Read HRA percentage into variable 'HRA'
 read HRA
 
 # Calculate Gross Salary using 'bc' (Basic Calculator)
