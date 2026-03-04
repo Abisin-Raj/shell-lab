@@ -10,14 +10,9 @@ if [ $b -gt $Large ]; then
 fi
 
 if [ $c -gt $Large ]; then
-    # If c is greater than Large, update Large to c
-    # Now Large holds the maximum of all three numbers
     Large=$c
 fi
 
-# echo with variable interpolation
-# $a, $b, $c, $Large are expanded to their values
-# Commas and spaces in the string are printed literally
 echo "Largest of $a, $b, $c is $Large"
 
 # Output:
