@@ -3,15 +3,9 @@ sum=0
 
 i="y"
 
-# while loop - repeats as long as condition is true
-# Syntax: while [ condition ]; do ... done
-# [ $i = "y" ] tests if variable i equals string "y"
-# Note: spaces around [ and ] are required
-# = is the string equality operator in test [ ]
 while [ $i = "y" ]
 do
 
-# clear - clears terminal screen for clean menu display
 clear
 
 # Display menu options using echo
