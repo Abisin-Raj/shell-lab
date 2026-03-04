@@ -5,11 +5,6 @@ read a b c
 
 Large=$a
 
-# First if statement - compare second number with current largest
-# Syntax: if [ condition ]; then commands; fi
-# [ $b -gt $Large ] is a test condition
-# -gt is "greater than" operator for integer comparison
-# Operators: -gt (>), -lt (<), -ge (>=), -le (<=), -eq (==), -ne (!=)
 if [ $b -gt $Large ]; then
     # If b is greater than Large, update Large to b
     Large=$b
