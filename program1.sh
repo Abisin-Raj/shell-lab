@@ -5,16 +5,10 @@ echo "Enter the radius of the circle:"
 
 read r
 
-# Formula: Area = π * r² (using 3.14 as approximation of π)
 area=$(echo "3.14 * $r * $r" | bc)
 
-# Same command substitution pattern as above
-# Formula: Circumference = 2 * π * r
-# The expression "3.14 * 2 * $r" is sent to bc for calculation
 circum=$(echo "3.14 * 2 * $r" | bc)
 
-# echo with variable interpolation
-# Syntax: echo "text $variable"
 # $area is expanded to its calculated value within the double-quoted string
 echo "Area of the circle is: $area"
 
