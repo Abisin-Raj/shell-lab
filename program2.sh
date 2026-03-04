@@ -25,12 +25,7 @@ read n2
 
 case $ch in
 
-# Pattern 1: Addition
-# $((...)) is arithmetic expansion - evaluates mathematical expressions
-# Syntax: $((expression))
-# Performs integer arithmetic: n1 + n2
 1) sum=$((n1 + n2))
-   # Print result with variable interpolation
    echo "Sum = $sum";;
    # ;; terminates this case branch
 
