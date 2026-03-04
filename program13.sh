@@ -11,14 +11,8 @@ if [ $n -eq 0 ]; then
     exit 1
 fi
 
-# for loop - iterates through all command-line arguments
-# Syntax: for variable in list; do ... done
-# "$@" - special shell variable that expands to ALL positional parameters as separate quoted words
-# Example: for "sh program13.sh 10 20 30", "$@" expands to "10" "20" "30" (three separate items)
-# Using "$@" (quoted) is safer than $* - it preserves arguments with spaces correctly
 for i in "$@"
 do
-    # Add the current argument 'i' to the running 'sum'
     # Syntax: $((expression)) - arithmetic expansion evaluates integer math
     # sum = sum + i (accumulates total across all iterations)
     sum=$((sum + i))
