@@ -20,14 +20,9 @@ read ch
 echo "Enter first number:"
 read n1
 
-# Prompt for second number
 echo "Enter second number:"
-# read - stores second number in variable n2
 read n2
 
-# case statement - multi-way branch based on pattern matching
-# Syntax: case $variable in pattern) commands;; esac
-# Matches the value of $ch against patterns (1, 2, 3, 4, or *)
 case $ch in
 
 # Pattern 1: Addition
