@@ -1,7 +1,4 @@
-# Heading: Program to Count Lines, Words and Characters
-# Aim: To count lines, words and characters in a file
 
-# Clear the terminal screen for a clean output
 clear
 
 # Prompt for filename and read input in one line

@@ -24,5 +24,3 @@ else
     echo "Number is not Armstrong"
 fi
 
-# | Number is Armstrong                    |
-# |________________________________________|
