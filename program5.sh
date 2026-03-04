@@ -9,17 +9,11 @@ sd=0
 
 rev=0
 
-# Loop extracts digits one by one from right to left
 while [ $n -gt 0 ]
 do
 
-# Extract the rightmost digit using modulo operator
-# Syntax: $((expression)) - arithmetic expansion
-# % is modulo operator (remainder after division)
-# Example: 12345 % 10 = 5 (extracts last digit)
 sd=$((n % 10))
 
-# Build the reversed number
 # Formula: rev = rev * 10 + sd
 # Multiply current rev by 10 to shift digits left
 # Add the extracted digit to the right
