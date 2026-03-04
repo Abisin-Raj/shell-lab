@@ -7,11 +7,6 @@ read word
 
 vowels=$(echo $word | sed 's/[^aeiouAEIOU]//g')
 
-# Extract all consonants from the string
-# Similar logic to above:
-#   [^bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ] -> Match any character that is NOT a consonant
-#   // -> Replace non-consonants with nothing
-# Result: Only the consonants remain
 consonants=$(echo $word | sed 's/[^bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]//g')
 
 # Display statistics using Shell Parameter Expansion
