@@ -1,4 +1,3 @@
-# Heading: Program to find the Largest of Three Numbers
 # Aim: To find the largest of three numbers using user input
 
 # echo - Display prompt asking user for input

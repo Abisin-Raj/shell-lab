@@ -21,7 +21,3 @@ echo "Number of lines = $lines"
 echo "Number of words = $words"
 echo "Number of characters = $characters"
 
-# | Number of lines = 1                    |
-# | Number of words = 2                    |
-# | Number of characters = 12              |
-# |________________________________________|
