@@ -20,5 +20,3 @@ else
     echo "Good evening"
 fi
 
-# | Good afternoon                         |
-# |________________________________________|

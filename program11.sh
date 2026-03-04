@@ -1,10 +1,6 @@
-# Heading: Program to calculate Factorial
-# Aim: To calculate the factorial of a number
 
-# Prompt the user to enter a number to calculate its factorial
 echo "Factorial of the number?"
 
-# read - Built-in command that reads user input from stdin
 # Syntax: read variable_name
 # Waits for user to type a number and press Enter, then stores it in variable 'fact'
 # 'fact' represents the number n for which we want to find n!
