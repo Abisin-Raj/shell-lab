@@ -7,15 +7,10 @@ read n
 
 sum=0
 
-# We need the original values later for comparison
 old=$n
 
-# Start a while loop that continues as long as 'n' is greater than 0
-# This loop processes each digit of the number
 while [ $n -gt 0 ]
 do
-    # Extract the last digit of the number using the modulo operator (%)
-    # $(( ... )) is used for arithmetic expansion
     # Example: if n=153, 153 % 10 = 3
     sd=$((n % 10 ))
 
