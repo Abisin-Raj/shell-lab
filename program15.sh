@@ -5,11 +5,6 @@ echo "Enter the string "
 
 read word
 
-#   s/ -> substitute command
-#   [^aeiouAEIOU] -> Match any character that is NOT a vowel (caret ^ inside [] means negation)
-#   // -> Replace matched characters with nothing (delete them)
-#   g -> Global flag (replace all occurrences, not just the first one)
-# Result: Only the vowels remain in the string
 vowels=$(echo $word | sed 's/[^aeiouAEIOU]//g')
 
 # Extract all consonants from the string
