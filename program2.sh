@@ -8,8 +8,6 @@ do
 
 clear
 
-# Display menu options using echo
-# Each echo prints one line to the terminal
 echo "MENU"
 echo "1. Addition"
 echo "2. Subtraction"
@@ -17,12 +15,9 @@ echo "3. Multiplication"
 echo "4. Division"
 echo "Enter your choice"
 
-# read - reads user's menu choice into variable ch
 read ch
 
-# Prompt for first number
 echo "Enter first number:"
-# read - stores first number in variable n1
 read n1
 
 # Prompt for second number
