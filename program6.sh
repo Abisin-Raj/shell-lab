@@ -14,18 +14,12 @@ echo "Prime numbers are..."
 while [ $i -le $n ]
 do
 
-    # If we find a divisor later, we'll set flag=1 (not prime).
     flag=0
 
-    # Initialize inner loop counter j to 2
-    # We test divisibility starting from 2 up to (i-1)
     j=2
 
-    # Inner Loop: Check if 'i' is divisible by any number 'j'
-    # loop runs from j=2 to j < i
     while [ $j -lt $i ]
     do
-        # Calculate remainder of i divided by j
         # % is modulo operator
         k=$((i % j))
 
