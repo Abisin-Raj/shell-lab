@@ -41,14 +41,9 @@ case $ch in
 
 esac
 
-# Ask user if they want to continue
 echo "Do you want to continue (y/n)?"
-# read - stores user response in variable i
 read i
 
-# if statement - conditional execution
-# Syntax: if [ condition ]; then commands; fi
-# [ $i != "y" ] tests if i is NOT equal to "y"
 # != is the not-equal operator
 if [ $i != "y" ]; then
     # exit - terminates the script immediately
