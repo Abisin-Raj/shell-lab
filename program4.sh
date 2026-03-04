@@ -5,11 +5,6 @@ read a b c
 
 sum=$(echo "$a+$b+$c" | bc)
 
-# Calculate mean (average) with decimal precision
-# scale=4 - sets bc to use 4 decimal places
-# Syntax: scale=N; expression
-# Formula: mean = sum/3
-# The semicolon separates scale setting from the calculation
 # bc performs floating-point division (unlike shell arithmetic)
 mean=$(echo "scale=4; $sum/3" | bc)
 
