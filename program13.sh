@@ -3,14 +3,8 @@ clear
 
 sum=0
 
-# Get the number of command-line arguments passed to the script
-# $# - special shell variable (positional parameter count)
-# Syntax: n=$#
-# Example: running "sh program13.sh 10 20 30" sets $# to 3
 n=$#
 
-# Guard clause: check if any arguments were provided to avoid division by zero
-# Syntax: if [ condition ]; then commands; fi
 # [ $n -eq 0 ] tests if n equals 0 (-eq = equal to)
 if [ $n -eq 0 ]; then
     echo "No numbers provided."
