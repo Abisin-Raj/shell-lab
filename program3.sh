@@ -6,14 +6,9 @@ read a b c
 Large=$a
 
 if [ $b -gt $Large ]; then
-    # If b is greater than Large, update Large to b
     Large=$b
-# fi - ends the if statement
 fi
 
-# Second if statement - compare third number with current largest
-# [ $c -gt $Large ] tests if c is greater than current Large
-# At this point, Large is either a or b (whichever was bigger)
 if [ $c -gt $Large ]; then
     # If c is greater than Large, update Large to c
     # Now Large holds the maximum of all three numbers
