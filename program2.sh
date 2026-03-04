@@ -27,15 +27,10 @@ case $ch in
 
 1) sum=$((n1 + n2))
    echo "Sum = $sum";;
-   # ;; terminates this case branch
 
-# Pattern 2: Subtraction
-# $((n1 - n2)) subtracts n2 from n1
 2) sum=$((n1 - n2))
    echo "Subtraction = $sum";;
 
-# Pattern 3: Multiplication
-# * is multiplication operator in arithmetic expansion
 3) sum=$((n1 * n2))
    echo "Multiplication = $sum";;
 
