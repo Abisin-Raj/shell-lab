@@ -5,14 +5,8 @@ read fact
 
 ans=1
 
-# Initialize 'counter' to 0
-# This variable acts as our loop counter, incrementing from 0 up to 'fact'
-# The counter is compared against 'fact' to control the loop
 counter=0
 
-# while loop - repeats as long as condition is true
-# Syntax: while [ condition ]; do ... done
-# [ $fact -ne $counter ] tests if 'fact' is NOT EQUAL to 'counter' (-ne = "not equal")
 # Loop runs from counter=1 to counter=fact, multiplying ans each iteration
 # Example for n=5: ans = 1*1*2*3*4*5 = 120 (which is 5!)
 while [ $fact -ne $counter ]
