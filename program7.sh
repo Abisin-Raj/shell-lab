@@ -11,18 +11,12 @@ y=1
 
 i=2
 
-# Display header for the Fibonacci series
 echo "Fibonacci Series up to $n terms:"
 
-# Print the first term (0)
 echo "$x"
 
-# Print the second term (1)
 echo "$y"
 
-# while loop - generates remaining Fibonacci terms
-# Syntax: while [ condition ]; do ... done
-# [ $i -lt $n ] tests if i is less than n
 # Loop continues until we've generated n terms
 while [ $i -lt $n ]
 do
