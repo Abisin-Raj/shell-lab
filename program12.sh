@@ -19,14 +19,8 @@ read HRA
 
 Gross=$(echo "scale=2;$BP+($BP*$DA/100)+($BP*$HRA/100)" | bc)
 
-# $name and $Gross are interpolated into the string
 echo "Gross salary of $name is Rs $Gross"
 
-# Output:
-# __________________________________________
-# | Enter the name of the employee         |
-# | John                                   |
-# | Enter the Basic Pay of the employee    |
 # | 10000                                  |
 # | Enter the DA of the employee           |
 # | 10                                     |
