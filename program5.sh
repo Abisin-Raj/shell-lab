@@ -5,16 +5,10 @@ echo "Enter a number:"
 
 read n
 
-# sd will temporarily hold each extracted digit
 sd=0
 
-# Initialize rev (reversed number) to 0
-# rev will accumulate the reversed number
 rev=0
 
-# while loop - continues as long as n is greater than 0
-# Syntax: while [ condition ]; do ... done
-# [ $n -gt 0 ] tests if n is greater than zero
 # Loop extracts digits one by one from right to left
 while [ $n -gt 0 ]
 do
