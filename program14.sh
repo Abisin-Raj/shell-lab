@@ -1,16 +1,10 @@
 
 clear
 
-# +"%T" is a format specifier where %T = HH:MM:SS (equivalent to %H:%M:%S)
-# Command substitution with $(...) captures the output of 'date' into 'now'
-# This is used only for display purposes (12-hour or 24-hour time for the user)
 now=$(date +"%T")
 
-# Print the current time to the user
 echo "Current time: $now"
 
-# Get the current hour in 24-hour format (00-23)
-# Syntax: date +"%H" - %H extracts only the hour as a zero-padded decimal (00-23)
 # We overwrite 'now' with just the hour because we need an integer for comparison
 # This separate call is needed because %T cannot be compared directly with -ge/-lt
 now=$(date +"%H")
