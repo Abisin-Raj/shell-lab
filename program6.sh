@@ -1,18 +1,12 @@
 
-# Clear terminal screen for clean output
 clear
 
-# Display program title
 echo "Program to print prime numbers"
 
-# Prompt user for the upper limit
 echo "Enter the limit:"
 
-# Read the limit into variable n
 read n
 
-# Initialize outer loop counter i to 2
-# We start at 2 because 1 is not considered a prime number
 i=2
 
 # Header for the output
