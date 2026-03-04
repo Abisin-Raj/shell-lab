@@ -17,14 +17,8 @@ echo "Enter the HRA of the employee"
 
 read HRA
 
-# Calculate Gross Salary using 'bc' (Basic Calculator)
-# Formula: Gross = Basic Pay + (Basic Pay * DA / 100) + (Basic Pay * HRA / 100)
-# 'scale=2' ensures the result has 2 decimal places (for currency)
-# The arithmetic expression is echoed and piped into 'bc'
-# $BP, $DA, $HRA are variables expanded to their values
 Gross=$(echo "scale=2;$BP+($BP*$DA/100)+($BP*$HRA/100)" | bc)
 
-# Print the calculated Gross Salary for the employee
 # $name and $Gross are interpolated into the string
 echo "Gross salary of $name is Rs $Gross"
 
