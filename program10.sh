@@ -1,16 +1,11 @@
 
 clear
 
-# Prompt for filename and read input in one line
-# -p "prompt" displays the prompt string before reading input
-# The entered filename is stored in variable 'file'
 read -p "Enter the filename: " file
 
-# Display a header for the file contents
 echo "Contents of the file are"
 echo "##############"
 
-# Read and print the content of the file
 # 'cat' command concatenates and displays the file content
 echo "Displaying content of: $file"
 cat $file
