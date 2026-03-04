@@ -5,16 +5,10 @@ echo "How many numbers of terms to be generated?"
 
 read n
 
-# Initialize first Fibonacci number (F0 = 0)
-# x holds the previous-previous term
 x=0
 
-# Initialize second Fibonacci number (F1 = 1)
-# y holds the previous term
 y=1
 
-# Initialize loop counter to 2
-# We start at 2 because we already have the first two terms (0 and 1)
 i=2
 
 # Display header for the Fibonacci series
