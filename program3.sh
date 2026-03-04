@@ -1,13 +1,8 @@
 
 echo "Enter three numbers separated by space:"
 
-# Reads space-separated input and assigns to variables a, b, and c
-# Example: if user types "10 25 15", then a=10, b=25, c=15
 read a b c
 
-# Variable assignment - assume first number is largest initially
-# Syntax: Variable=value (use capital letters for clarity, not required)
-# This is our starting point for comparison
 Large=$a
 
 # First if statement - compare second number with current largest
