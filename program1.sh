@@ -13,7 +13,3 @@ echo "Area of the circle is: $area"
 
 echo "Circumference of the circle is: $circum"
 
-# | 5                                      |
-# | Area of the circle is: 78.5            |
-# | Circumference of the circle is: 31.4   |
-# |________________________________________|
