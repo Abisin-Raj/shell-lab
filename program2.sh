@@ -34,16 +34,11 @@ case $ch in
 3) sum=$((n1 * n2))
    echo "Multiplication = $sum";;
 
-# Pattern 4: Division
-# / is integer division operator (truncates decimal)
 4) sum=$((n1 / n2))
    echo "Division = $sum";;
 
-# Pattern *: Default case (wildcard matches anything)
-# Handles invalid input (not 1, 2, 3, or 4)
 *) echo "Invalid choice";;
 
-# esac - ends the case statement (case spelled backwards)
 esac
 
 # Ask user if they want to continue
