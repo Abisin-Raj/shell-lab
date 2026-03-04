@@ -13,9 +13,3 @@ else
     echo "Input string is a palindrome"
 fi
 
-# Output:
-# __________________________________________
-# | Enter the string:                      |
-# | madam                                  |
-# | Input string is a palindrome           |
-# |________________________________________|
