@@ -24,10 +24,5 @@ else
     echo "Number is not Armstrong"
 fi
 
-# Output:
-# __________________________________________
-# | Program to check Armstrong number      |
-# | Enter the number:                      |
-# | 153                                    |
 # | Number is Armstrong                    |
 # |________________________________________|
