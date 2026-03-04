@@ -17,17 +17,11 @@ echo "$x"
 
 echo "$y"
 
-# Loop continues until we've generated n terms
 while [ $i -lt $n ]
 do
 
-# Increment counter for next iteration
-# $((i + 1)) adds 1 to i
 i=$((i + 1))
 
-# Calculate next Fibonacci number
-# Fibonacci formula: F(n) = F(n-1) + F(n-2)
-# z = x + y (sum of previous two terms)
 # Example: if x=0, y=1, then z=1
 #          if x=1, y=1, then z=2
 #          if x=1, y=2, then z=3, etc.
