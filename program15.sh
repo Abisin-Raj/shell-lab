@@ -9,16 +9,11 @@ vowels=$(echo $word | sed 's/[^aeiouAEIOU]//g')
 
 consonants=$(echo $word | sed 's/[^bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]//g')
 
-# Display statistics using Shell Parameter Expansion
-# ${#variable} returns the length of the string stored in variable
 
-# Print total length of the original string
 echo "${#word} characters"
 
-# Print number of vowels found (length of the 'vowels' string)
 echo "${#vowels} vowels"
 
-# Print number of consonants found (length of the 'consonants' string)
 echo "${#consonants} consonants"
 
 # Output:
