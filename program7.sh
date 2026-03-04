@@ -30,14 +30,8 @@ x=$y
 
 y=$z
 
-#   Series: 0, 1, 1, 2, 3, 5, 8
 done
 
-# Output:
-# __________________________________________
-# | How many numbers of terms to be generated?|
-# | 5                                      |
-# | Fibonacci Series up to 5 terms:        |
 # | 0                                      |
 # | 1                                      |
 # | 1                                      |
