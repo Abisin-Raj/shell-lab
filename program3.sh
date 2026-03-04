@@ -1,11 +1,6 @@
-# Aim: To find the largest of three numbers using user input
 
-# echo - Display prompt asking user for input
-# Instructs user to enter three numbers separated by spaces
 echo "Enter three numbers separated by space:"
 
-# read with multiple variables
-# Syntax: read var1 var2 var3
 # Reads space-separated input and assigns to variables a, b, and c
 # Example: if user types "10 25 15", then a=10, b=25, c=15
 read a b c
