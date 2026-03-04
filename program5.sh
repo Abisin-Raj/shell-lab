@@ -1,16 +1,10 @@
-# Heading: Program to Reverse a Number
-# Aim: To reverse a number using a while loop
 
-# Clear terminal screen for clean output
 clear
 
-# Prompt user to enter a number to reverse
 echo "Enter a number:"
 
-# Read the number into variable n
 read n
 
-# Initialize sd (single digit) to 0
 # sd will temporarily hold each extracted digit
 sd=0
 

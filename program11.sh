@@ -4,43 +4,55 @@
 # Prompt the user to enter a number to calculate its factorial
 echo "Factorial of the number?"
 
-# Read the user's input and store it in the variable 'fact'
+# read - Built-in command that reads user input from stdin
+# Syntax: read variable_name
+# Waits for user to type a number and press Enter, then stores it in variable 'fact'
 # 'fact' represents the number n for which we want to find n!
 read fact
 
 # Initialize 'ans' (answer) to 1
-# This variable will accumulate the product of numbers from 1 to n
-# We start with 1 because it's the identity element for multiplication
+# Syntax: variable=value (no spaces around =)
+# We start with 1 because 1 is the multiplicative identity: n! = 1 * 2 * 3 * ... * n
 ans=1
 
 # Initialize 'counter' to 0
-# This variable will act as our loop counter, incrementing from 0 to n
+# This variable acts as our loop counter, incrementing from 0 up to 'fact'
+# The counter is compared against 'fact' to control the loop
 counter=0
 
-# Start a while loop that continues as long as 'fact' is not equal to 'counter'
-# -ne is the "not equal" operator
-# The loop will run until 'counter' reaches 'fact'
+# while loop - repeats as long as condition is true
+# Syntax: while [ condition ]; do ... done
+# [ $fact -ne $counter ] tests if 'fact' is NOT EQUAL to 'counter' (-ne = "not equal")
+# Loop runs from counter=1 to counter=fact, multiplying ans each iteration
+# Example for n=5: ans = 1*1*2*3*4*5 = 120 (which is 5!)
 while [ $fact -ne $counter ]
 do
 
-    # Increment the counter by 1
-    # $(( ... )) is used for arithmetic expansion
-    # In the first iteration, counter becomes 1
+    # Increment counter by 1 each iteration (counts from 1 up to fact)
+    # Syntax: $((expression)) - arithmetic expansion
+    # This means counter = counter + 1
     counter=$(( counter + 1 ))
 
-    # Multiply the current 'ans' by the 'counter' value using 'bc' to handle large numbers
-    # Standard shell arithmetic $((...)) overflows for factorials > 20!
+    # Multiply 'ans' by 'counter' using bc (basic calculator)
+    # Syntax: variable=$(echo "expression" | bc)
+    # - echo "$ans * $counter" prints the expression as a string
+    # - | (pipe) sends it to bc which evaluates it
+    # We use bc instead of $((...)) because bc handles arbitrarily large integers
+    # Shell arithmetic would overflow for factorials larger than 20! (> 2^63)
     ans=$(echo "$ans * $counter" | bc)
 
+# done - marks the end of the while loop
+# When counter equals fact, the condition [ $fact -ne $counter ] becomes false
+# and loop exits with 'ans' holding the final factorial value
 done
 
-# Print the final calculated factorial
-# $ans holds the result (n!)
+# echo with variable interpolation - prints the computed factorial
+# $fact is the original input, $ans is the computed n!
 echo "Factorial of $fact is $ans"
 
 # Output:
 # __________________________________________
 # | Factorial of the number?               |
 # | 5                                      |
-# | Factorial of 5 is 120              |
+# | Factorial of 5 is 120                  |
 # |________________________________________|

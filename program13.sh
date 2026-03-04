@@ -9,24 +9,37 @@ clear
 sum=0
 
 # Get the number of command-line arguments passed to the script
-# $# is a special shell variable that holds the count of positional parameters
+# $# - special shell variable (positional parameter count)
+# Syntax: n=$#
+# Example: running "sh program13.sh 10 20 30" sets $# to 3
 n=$#
 
-# Check if any arguments were provided to avoid division by zero
+# Guard clause: check if any arguments were provided to avoid division by zero
+# Syntax: if [ condition ]; then commands; fi
+# [ $n -eq 0 ] tests if n equals 0 (-eq = equal to)
 if [ $n -eq 0 ]; then
     echo "No numbers provided."
+    # $0 - special variable holding the name/path of the script itself
+    # Used here to display the correct script name in the usage message
     echo "Usage: sh $0 number1 number2 ..."
+    # exit - terminates the script immediately
+    # Syntax: exit [exit_code]
+    # exit 1 signals an error to the calling shell (non-zero = failure)
     exit 1
 fi
 
-# Iterate through all command-line arguments using a for loop
-# "$@" expands to all command-line parameters as separate words ("$1" "$2" ...)
-# This is safer than $* which expands to a single string
+# for loop - iterates through all command-line arguments
+# Syntax: for variable in list; do ... done
+# "$@" - special shell variable that expands to ALL positional parameters as separate quoted words
+# Example: for "sh program13.sh 10 20 30", "$@" expands to "10" "20" "30" (three separate items)
+# Using "$@" (quoted) is safer than $* - it preserves arguments with spaces correctly
 for i in "$@"
 do
-    # Add the current argument 'i' to the 'sum' variable
-    # $((...)) performs arithmetic expansion
+    # Add the current argument 'i' to the running 'sum'
+    # Syntax: $((expression)) - arithmetic expansion evaluates integer math
+    # sum = sum + i (accumulates total across all iterations)
     sum=$((sum + i))
+# done - marks the end of the for loop body
 done
 
 # Calculate the average using 'bc' (Basic Calculator) for floating-point precision
