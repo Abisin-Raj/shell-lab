@@ -3,11 +3,6 @@ echo "Enter the three numbers separated by space:"
 
 read a b c
 
-# Calculate sum using bc (basic calculator)
-# Syntax: $(command) - command substitution, captures output
-# echo "expression" | bc - sends mathematical expression to bc for evaluation
-# bc evaluates the expression: a+b+c
-# Result is stored in variable sum
 sum=$(echo "$a+$b+$c" | bc)
 
 # Calculate mean (average) with decimal precision
