@@ -5,15 +5,9 @@ sum=0
 
 n=$#
 
-# [ $n -eq 0 ] tests if n equals 0 (-eq = equal to)
 if [ $n -eq 0 ]; then
     echo "No numbers provided."
-    # $0 - special variable holding the name/path of the script itself
-    # Used here to display the correct script name in the usage message
     echo "Usage: sh $0 number1 number2 ..."
-    # exit - terminates the script immediately
-    # Syntax: exit [exit_code]
-    # exit 1 signals an error to the calling shell (non-zero = failure)
     exit 1
 fi
 
