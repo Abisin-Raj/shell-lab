@@ -21,4 +21,3 @@ avg=$(echo "scale=2;$sum/$n" | bc)
 echo "Average of the numbers = $avg"
 
 
-# |________________________________________|

@@ -1,13 +1,8 @@
-# Heading: Program to generate Fibonacci Series
-# Aim: To generate Fibonacci series up to N terms
 
-# Clear terminal screen for clean output
 clear
 
-# Prompt user for how many Fibonacci terms to generate
 echo "How many numbers of terms to be generated?"
 
-# Read the number of terms into variable n
 read n
 
 # Initialize first Fibonacci number (F0 = 0)
