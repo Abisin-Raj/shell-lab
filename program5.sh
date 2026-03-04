@@ -16,16 +16,10 @@ sd=$((n % 10))
 
 rev=$((rev * 10 + sd))
 
-# / is integer division operator (truncates decimal)
-# Example: 12345 / 10 = 1234 (removes last digit)
-# This prepares n for the next iteration
 n=$((n / 10))
 
-# done - marks end of while loop
-# Loop continues until all digits are processed (n becomes 0)
 done
 
-# Display the reversed number
 # $rev contains the final reversed value
 echo "Reverse of the number is $rev"
 
