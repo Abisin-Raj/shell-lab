@@ -9,17 +9,11 @@ read n
 
 i=2
 
-# Header for the output
 echo "Prime numbers are..."
 
-# Outer Loop: Iterate through all numbers from 2 up to n
-# Syntax: while [ condition ]; do ... done
-# -le is "less than or equal to"
 while [ $i -le $n ]
 do
 
-    # Initialize flag to 0 for current number i
-    # flag=0 assumes i is prime initially.
     # If we find a divisor later, we'll set flag=1 (not prime).
     flag=0
 
