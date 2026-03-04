@@ -13,13 +13,8 @@ echo "#############"
 
 lines=$(wc -l < $file)
 
-# Count words in the file
-# wc -w counts the number of words
-# < $file redirection ensures clean numeric output
 words=$(wc -w < $file)
 
-# Count characters (bytes) in the file
-# wc -c counts the number of bytes/characters
 # < $file matches the input redirection pattern used above
 characters=$(wc -c < $file)
 
