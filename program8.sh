@@ -1,17 +1,12 @@
 
-# Echo command displays a message describing the program's purpose
 echo "Program to check Armstrong number"
 
-# Prompt the user to enter a number
 echo "Enter the number: "
 
-# Read the user's input and store it in variable 'n'
 read n
 
-# Initialize 'sum' variable to 0; this will hold the sum of cubes of digits
 sum=0
 
-# Store the original value of 'n' in 'old' because 'n' will be modified in the loop
 # We need the original values later for comparison
 old=$n
 
