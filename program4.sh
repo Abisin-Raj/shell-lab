@@ -13,13 +13,8 @@ sd=$(echo "($a-$mean)*($a-$mean)" | bc)
 
 sd=$(echo "$sd+($b-$mean)*($b-$mean)" | bc)
 
-# This is Σ(x - mean)² for all three numbers
 sd=$(echo "$sd+($c-$mean)*($c-$mean)" | bc)
 
-# Standard Deviation Calculation - Final Step
-# Divide sum of squared deviations by n (3 numbers)
-# scale=6 - use 6 decimal places for final precision
-# Formula: variance = Σ(x - mean)²/n
 # Note: This calculates variance, not standard deviation
 # (Standard deviation would require sqrt, but bc doesn't have it built-in)
 sd=$(echo "scale=6; $sd/3" | bc)
