@@ -21,4 +21,3 @@ Gross=$(echo "scale=2;$BP+($BP*$DA/100)+($BP*$HRA/100)" | bc)
 
 echo "Gross salary of $name is Rs $Gross"
 
-# |________________________________________|

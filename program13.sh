@@ -1,11 +1,6 @@
-# Heading: Program to calculate Average
-# Aim: To calculate the average of numbers provided as arguments
 
-# Clear the terminal screen for a clean output
 clear
 
-# Initialize 'sum' variable to 0
-# This variable will accumulate the sum of all the numbers provided
 sum=0
 
 # Get the number of command-line arguments passed to the script
