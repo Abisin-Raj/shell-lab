@@ -24,21 +24,21 @@ Explore our exhaustive index of Bash scripts specifically designed to teach crit
 
 | Script Name | Aim & Purpose | Essential Linux/Bash Concepts Applied |
 |-------------|---------------|---------------------------------------|
-| `program1.sh` | **Calculate Area & Circumference of a Circle** | Area & circumference formula implementation, `bc` for floating-point math |
-| `program2.sh` | **Interactive Arithmetic Operations Menu** | `case` statement usage, interactive `while` loops, basic arithmetic |
-| `program3.sh` | **Find the Largest of Three Numbers** | Conditional `if-else` blocks, relational operators, numerical comparison |
-| `program4.sh` | **Compute Mean & Variance** | Statistical modeling, `bc` with `scale`, variance derivation logic |
-| `program5.sh` | **Reverse an Integer** | `while` loop iterations, modulo `%` operations, integer division `/` |
-| `program6.sh` | **Generate Prime Numbers** | Nested loop structures, divisibility checking using modulo |
-| `program7.sh` | **Generate Fibonacci Sequence** | Iterative number generation algorithms, temporary variable swapping |
-| `program8.sh` | **Verify Armstrong Numbers** | Cubing mathematical digits, number accumulation logic |
-| `program9.sh` | **Check for Palindrome Strings** | String reversal using `rev`, string equality and comparison operations |
-| `program10.sh`| **Count File Lines, Words, and Characters** | System utilities (`wc`), standard input redirection, basic file operations |
-| `program11.sh`| **Calculate Factorial Sequences** | Iterative reduction, variable multiplication handling, large number formatting |
-| `program12.sh`| **Compute Employee Gross Salary** | Percentage-based calculations, handling floating-point currency approximations |
-| `program13.sh`| **Calculate Averages via Command Line Inputs** | CLI argument parsing (`$#`, `$@`), dynamic loops, terminal interaction |
-| `program14.sh`| **Dynamic Time-based Greeting Script** | `date` system command extraction, parsing hours, time-based dynamic logic |
-| `program15.sh`| **Count Vowels and Consonants in Text** | Rapid string parsing with `sed`, regular expression (regex) applications |
+| `circle.sh` | **Calculate Area & Circumference of a Circle** | Area & circumference formula implementation, `bc` for floating-point math |
+| `arithmetic.sh` | **Interactive Arithmetic Operations Menu** | `case` statement usage, interactive `while` loops, basic arithmetic |
+| `largest.sh` | **Find the Largest of Three Numbers** | Conditional `if-else` blocks, relational operators, numerical comparison |
+| `mean_variance.sh` | **Compute Mean & Variance** | Statistical modeling, `bc` with `scale`, variance derivation logic |
+| `reverse.sh` | **Reverse an Integer** | `while` loop iterations, modulo `%` operations, integer division `/` |
+| `primes.sh` | **Generate Prime Numbers** | Nested loop structures, divisibility checking using modulo |
+| `fibonacci.sh` | **Generate Fibonacci Sequence** | Iterative number generation algorithms, temporary variable swapping |
+| `armstrong.sh` | **Verify Armstrong Numbers** | Cubing mathematical digits, number accumulation logic |
+| `palindrome.sh` | **Check for Palindrome Strings** | String reversal using `rev`, string equality and comparison operations |
+| `word_count.sh`| **Count File Lines, Words, and Characters** | System utilities (`wc`), standard input redirection, basic file operations |
+| `factorial.sh`| **Calculate Factorial Sequences** | Iterative reduction, variable multiplication handling, large number formatting |
+| `salary.sh`| **Compute Employee Gross Salary** | Percentage-based calculations, handling floating-point currency approximations |
+| `average.sh`| **Calculate Averages via Command Line Inputs** | CLI argument parsing (`$#`, `$@`), dynamic loops, terminal interaction |
+| `greeting.sh`| **Dynamic Time-based Greeting Script** | `date` system command extraction, parsing hours, time-based dynamic logic |
+| `vowels.sh`| **Count Vowels and Consonants in Text** | Rapid string parsing with `sed`, regular expression (regex) applications |
 
 ---
 
@@ -55,16 +55,16 @@ To leverage these **Linux shell scripting examples** on your local Unix-like sys
 2. **Grant Execution Permissions**
    Before running a bash script, you must temporarily modify its permissions to make it an executable file:
    ```bash
-   chmod +x program1.sh
+   chmod +x circle.sh
    # Or to make all scripts executable: chmod +x *.sh
    ```
 
 3. **Run the Script**
    Execute the program via the terminal using the standard execution syntax:
    ```bash
-   ./program1.sh
+   ./circle.sh
    # Alternatively, you can invoke bash directly:
-   bash program1.sh
+   bash circle.sh
    ```
 
 ---
